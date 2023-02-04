@@ -2,7 +2,6 @@ import { useMutation, useQuery, useQueryClient } from "react-query";
 import { getTodos, removeTodo } from "../apis/todos-api"
 
 export const TodoList = () => {
-
     const queryClient = useQueryClient();
     const {data, isLoading} = useQuery('todos', getTodos);
 
